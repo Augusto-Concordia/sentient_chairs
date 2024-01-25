@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="" />
+    <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="First commit!&#10;&#10;Completed undergraduate part of Assignment #1">
+      <change afterPath="$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Props/Materials/M_Chair.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Props/Materials/M_Chair.uasset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +26,9 @@
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2bSZ01AqyoOPze0fkUQGTyaxdSd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,8 +36,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -121,8 +130,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706210214711</updated>
-      <workItem from="1706210217703" duration="776000" />
+      <workItem from="1706210217703" duration="1039000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit!&#10;&#10;Completed undergraduate part of Assignment #1">
+      <option name="closed" value="true" />
+      <created>1706211641398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706211641398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +148,9 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First commit!&#10;&#10;Completed undergraduate part of Assignment #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit!&#10;&#10;Completed undergraduate part of Assignment #1" />
   </component>
 </project>
