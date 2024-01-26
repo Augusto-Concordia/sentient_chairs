@@ -49,14 +49,13 @@ void AMyFirstCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	// the below line is used mainly to safeguard against multiplayer scenarios where this might not be the local player
 	if (const ULocalPlayer* LocalPlayer = InstancePlayerController->GetLocalPlayer())
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("SetupPlayerInputComponent with LocalPlayer! ") + LocalPlayer->GetName());
-
 		// gets the input subsystem for the local player (ECS-style)
 		if(UEnhancedInputLocalPlayerSubsystem* InputSystem = LocalPlayer->GetSubsystem<UEnhancedInputLocalPlayerSubsystem>())
 		{
 			// adds the mapping context to the input subsystem, making sure it exists (safeguards against not assigning it in the editor)
 			if (!Imc_Normal_Controls.IsNull())
 			{
+				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Added MappingContext with LocalPlayer! ") + LocalPlayer->GetName());
 				InputSystem->AddMappingContext(Imc_Normal_Controls.LoadSynchronous(), 0);
 			}
 		}
@@ -81,8 +80,6 @@ void AMyFirstCharacter::MoveJump(const FInputActionValue& Instance)
 void AMyFirstCharacter::MoveFb(const FInputActionValue& Instance)
 {
 	static uint64 MoveFbLogKey = 2;
-
-	GEngine->AddOnScreenDebugMessage(MoveFbLogKey, 2.5f, FColor::Green, TEXT("Moved Forward/Backward!"));
 
 	const float MoveFbValue = Instance.Get<float>();
 
