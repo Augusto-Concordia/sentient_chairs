@@ -101,7 +101,7 @@ void AMyFirstCharacter::MoveLr(const FInputActionValue& Instance)
 void AMyFirstCharacter::LookUd(const FInputActionValue& Instance)
 {
 	const float LookUdValue = Instance.Get<float>();
-	Camera->AddLocalRotation(FRotator(1.0f, 0.0f, 0.0f) * LookUdValue * 1.2f); //TODO: make this editable
+	Camera->AddLocalRotation(FRotator(1.0f, 0.0f, 0.0f) * LookUdValue * VerticalLookSensitivity); //TODO: make this editable
 
 	static constexpr uint64 LookUdLogKey = 4;
 	GEngine->AddOnScreenDebugMessage(LookUdLogKey, 2.5f, FColor::Green, TEXT("Looked Up/Down! " + FString::SanitizeFloat(LookUdValue)));
@@ -110,7 +110,7 @@ void AMyFirstCharacter::LookUd(const FInputActionValue& Instance)
 void AMyFirstCharacter::LookLr(const FInputActionValue& Instance)
 {
 	const float LookLrValue = Instance.Get<float>();
-	AddControllerYawInput(LookLrValue * 1.8f); //TODO: make this editable
+	AddControllerYawInput(LookLrValue * HorizontalLookSensitivity); //TODO: make this editable
 
 	static constexpr uint64 LookLrLogKey = 5;
 	GEngine->AddOnScreenDebugMessage(LookLrLogKey, 2.5f, FColor::Green, TEXT("Looked Left/Right! " + FString::SanitizeFloat(LookLrValue)));

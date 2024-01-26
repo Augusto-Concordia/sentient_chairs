@@ -16,6 +16,12 @@ class ASSIGNMENT01_API AMyFirstCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
+	UPROPERTY(EditAnywhere, Category="Input|Settings")
+	float HorizontalLookSensitivity = 2.0f;
+
+	UPROPERTY(EditAnywhere, Category="Input|Settings")
+	float VerticalLookSensitivity = 1.8f;
+
 private:
 	// camera component
 	UPROPERTY(EditAnywhere, Category="Components|Camera")
