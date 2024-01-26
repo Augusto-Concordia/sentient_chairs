@@ -70,6 +70,9 @@ void AMyFirstCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	Input->BindAction(Ia_Move_LeftRight, ETriggerEvent::Triggered, this, &AMyFirstCharacter::MoveLr);
 	Input->BindAction(Ia_Look_UpDown, ETriggerEvent::Triggered, this, &AMyFirstCharacter::LookUd);
 	Input->BindAction(Ia_Look_LeftRight, ETriggerEvent::Triggered, this, &AMyFirstCharacter::LookLr);
+	Input->BindAction(Ia_TeleportForward, ETriggerEvent::Triggered, this, &AMyFirstCharacter::TeleportForward);
+	Input->BindAction(Ia_TeleportRight, ETriggerEvent::Triggered, this, &AMyFirstCharacter::TeleportRight);
+	Input->BindAction(Ia_TeleportUp, ETriggerEvent::Triggered, this, &AMyFirstCharacter::TeleportUp);
 }
 
 void AMyFirstCharacter::MoveJump(const FInputActionValue& Instance)
@@ -101,7 +104,7 @@ void AMyFirstCharacter::MoveLr(const FInputActionValue& Instance)
 void AMyFirstCharacter::LookUd(const FInputActionValue& Instance)
 {
 	const float LookUdValue = Instance.Get<float>();
-	Camera->AddLocalRotation(FRotator(1.0f, 0.0f, 0.0f) * LookUdValue * VerticalLookSensitivity); //TODO: make this editable
+	Camera->AddLocalRotation(FRotator(1.0f, 0.0f, 0.0f) * LookUdValue * VerticalLookSensitivity);
 
 	static constexpr uint64 LookUdLogKey = 4;
 	GEngine->AddOnScreenDebugMessage(LookUdLogKey, 2.5f, FColor::Green, TEXT("Looked Up/Down! " + FString::SanitizeFloat(LookUdValue)));
@@ -110,9 +113,33 @@ void AMyFirstCharacter::LookUd(const FInputActionValue& Instance)
 void AMyFirstCharacter::LookLr(const FInputActionValue& Instance)
 {
 	const float LookLrValue = Instance.Get<float>();
-	AddControllerYawInput(LookLrValue * HorizontalLookSensitivity); //TODO: make this editable
+	AddControllerYawInput(LookLrValue * HorizontalLookSensitivity);
 
 	static constexpr uint64 LookLrLogKey = 5;
 	GEngine->AddOnScreenDebugMessage(LookLrLogKey, 2.5f, FColor::Green, TEXT("Looked Left/Right! " + FString::SanitizeFloat(LookLrValue)));
+}
+
+void AMyFirstCharacter::TeleportForward(const FInputActionValue& Instance)
+{
+	SetActorLocation(GetActorLocation() + GetActorForwardVector() * 100.0f);
+
+	static constexpr uint64 LogKey = 6;
+	GEngine->AddOnScreenDebugMessage(LogKey, 2.5f, FColor::Green, TEXT("Teleport Forward!"));
+}
+
+void AMyFirstCharacter::TeleportRight(const FInputActionValue& Instance)
+{
+	SetActorLocation(GetActorLocation() + GetActorRightVector() * 100.0f);
+
+	static constexpr uint64 LogKey = 7;
+	GEngine->AddOnScreenDebugMessage(LogKey, 2.5f, FColor::Green, TEXT("Teleport Right!"));
+}
+
+void AMyFirstCharacter::TeleportUp(const FInputActionValue& Instance)
+{
+	SetActorLocation(GetActorLocation() + GetActorUpVector() * 100.0f);
+
+	static constexpr uint64 LogKey = 8;
+	GEngine->AddOnScreenDebugMessage(LogKey, 2.5f, FColor::Green, TEXT("Teleport Up!"));
 }
 

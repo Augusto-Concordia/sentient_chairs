@@ -45,6 +45,15 @@ private:
 	UPROPERTY(EditAnywhere, Category="Input|Actions")
 	UInputAction* Ia_Jump;
 
+	UPROPERTY(EditAnywhere, Category="Input|Actions")
+	UInputAction* Ia_TeleportForward;
+
+	UPROPERTY(EditAnywhere, Category="Input|Actions")
+	UInputAction* Ia_TeleportRight;
+
+	UPROPERTY(EditAnywhere, Category="Input|Actions")
+	UInputAction* Ia_TeleportUp;
+
 public:
 	// Sets default values for this character's properties
 	AMyFirstCharacter();
@@ -66,4 +75,7 @@ private:
 	void MoveLr(const FInputActionValue& Instance);
 	void LookUd(const FInputActionValue& Instance);
 	void LookLr(const FInputActionValue& Instance);
+	void TeleportForward(const FInputActionValue& Instance);
+	void TeleportRight(const FInputActionValue& Instance);
+	void TeleportUp(const FInputActionValue& Instance);
 };

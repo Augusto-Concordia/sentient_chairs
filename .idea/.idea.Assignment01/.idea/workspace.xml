@@ -7,8 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="feat(mfc): added jump!">
+    <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="feat(mfc): added sensitivity controls to editor">
+      <change afterPath="$PROJECT_DIR$/Content/Input/IA_TeleportForward.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/IA_TeleportRight.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/IA_TeleportUp.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Normal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Normal.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/HQ/E0QZE2FUHN1X7P6THUSTBN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/HQ/E0QZE2FUHN1X7P6THUSTBN.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.h" afterDir="false" />
     </list>
@@ -25,6 +30,8 @@
     <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -194,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706230596995</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(mfc): added sensitivity controls to editor">
+      <option name="closed" value="true" />
+      <created>1706236431230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706236431231</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +226,7 @@
     <MESSAGE value="chore(mfc): improved file structure" />
     <MESSAGE value="feat(mfc): added look at mechanics" />
     <MESSAGE value="feat(mfc): added jump!" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(mfc): added jump!" />
+    <MESSAGE value="feat(mfc): added sensitivity controls to editor" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(mfc): added sensitivity controls to editor" />
   </component>
 </project>
