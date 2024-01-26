@@ -74,7 +74,7 @@ void AMyFirstCharacter::MoveJump(const FInputActionValue& Instance)
 {
 	static uint64 JumpLogKey = 1;
 
-	GEngine->AddOnScreenDebugMessage(JumpLogKey, 2.5f, FColor::Green, TEXT("Jumped! "));
+	GEngine->AddOnScreenDebugMessage(JumpLogKey, 2.5f, FColor::Green, TEXT("Jumped!"));
 }
 
 void AMyFirstCharacter::MoveFb(const FInputActionValue& Instance)
@@ -95,20 +95,20 @@ void AMyFirstCharacter::MoveLr(const FInputActionValue& Instance)
 	GEngine->AddOnScreenDebugMessage(MoveLrLogKey, 2.5f, FColor::Green, TEXT("Moved Left/Right! " + FString::SanitizeFloat(MoveLrValue)));
 }
 
-void AMyFirstCharacter::LookUd(const FInputActionValue& instance)
+void AMyFirstCharacter::LookUd(const FInputActionValue& Instance)
 {
 	static uint64 LookUDLogKey = 4;
 
-	const float LookUDValue = instance.Get<float>();
+	const float LookUDValue = Instance.Get<float>();
 
 	GEngine->AddOnScreenDebugMessage(LookUDLogKey, 2.5f, FColor::Green, TEXT("Looked Up/Down! " + FString::SanitizeFloat(LookUDValue)));
 }
 
-void AMyFirstCharacter::LookLr(const FInputActionValue& instance)
+void AMyFirstCharacter::LookLr(const FInputActionValue& Instance)
 {
 	static uint64 LookLRLogKey = 5;
 
-	const float LookLRValue = instance.Get<float>();
+	const float LookLRValue = Instance.Get<float>();
 
 	GEngine->AddOnScreenDebugMessage(LookLRLogKey, 2.5f, FColor::Green, TEXT("Looked Left/Right! " + FString::SanitizeFloat(LookLRValue)));
 }

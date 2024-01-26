@@ -58,6 +58,6 @@ private:
 	void MoveJump(const FInputActionValue& Instance);
 	void MoveFb(const FInputActionValue& Instance);
 	void MoveLr(const FInputActionValue& Instance);
-	void LookUd(const FInputActionValue& instance);
-	void LookLr(const FInputActionValue& instance);
+	void LookUd(const FInputActionValue& Instance);
+	void LookLr(const FInputActionValue& Instance);
 };
