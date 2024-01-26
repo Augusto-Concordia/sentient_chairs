@@ -19,6 +19,10 @@ AMyFirstCharacter::AMyFirstCharacter()
 	// when attaching a component to another before it's been registered with Unreal, we call SetupAttachment instead of AttachToComponent
 	Camera->SetupAttachment(RootComponent);
 	Camera->SetRelativeLocation(FVector(0.0f, 0.0f, 150.0f));
+
+	// contrary to the default character, we don't have the below line, which is why we need to manually rotate the camera
+	// to have pitch rotation follow the controller
+	//FirstPersonCameraComponent->bUsePawnControlRotation = true;
 }
 
 // Called when the game starts or when spawned
@@ -70,7 +74,7 @@ void AMyFirstCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 void AMyFirstCharacter::MoveJump(const FInputActionValue& Instance)
 {
-	AddMovementInput(FVector(0.0f, 0.0f, -1.0f), 1.0f);
+	//TODO: implement jumping (proper? idk)
 
 	static constexpr uint64 JumpLogKey = 1;
 	GEngine->AddOnScreenDebugMessage(JumpLogKey, 2.5f, FColor::Green, TEXT("Jumped!"));
@@ -79,7 +83,6 @@ void AMyFirstCharacter::MoveJump(const FInputActionValue& Instance)
 void AMyFirstCharacter::MoveFb(const FInputActionValue& Instance)
 {
 	const float MoveFbValue = Instance.Get<float>();
-
 	AddMovementInput(GetActorForwardVector(), MoveFbValue);
 
 	static constexpr uint64 MoveFbLogKey = 2;
@@ -89,7 +92,6 @@ void AMyFirstCharacter::MoveFb(const FInputActionValue& Instance)
 void AMyFirstCharacter::MoveLr(const FInputActionValue& Instance)
 {
 	const float MoveLrValue = Instance.Get<float>();
-
 	AddMovementInput(GetActorRightVector(), MoveLrValue);
 
 	static constexpr uint64 MoveLrLogKey = 3;
@@ -99,6 +101,7 @@ void AMyFirstCharacter::MoveLr(const FInputActionValue& Instance)
 void AMyFirstCharacter::LookUd(const FInputActionValue& Instance)
 {
 	const float LookUdValue = Instance.Get<float>();
+	Camera->AddLocalRotation(FRotator(1.0f, 0.0f, 0.0f) * LookUdValue * 1.2f); //TODO: make this editable
 
 	static constexpr uint64 LookUdLogKey = 4;
 	GEngine->AddOnScreenDebugMessage(LookUdLogKey, 2.5f, FColor::Green, TEXT("Looked Up/Down! " + FString::SanitizeFloat(LookUdValue)));
@@ -107,6 +110,7 @@ void AMyFirstCharacter::LookUd(const FInputActionValue& Instance)
 void AMyFirstCharacter::LookLr(const FInputActionValue& Instance)
 {
 	const float LookLrValue = Instance.Get<float>();
+	AddControllerYawInput(LookLrValue * 1.8f); //TODO: make this editable
 
 	static constexpr uint64 LookLrLogKey = 5;
 	GEngine->AddOnScreenDebugMessage(LookLrLogKey, 2.5f, FColor::Green, TEXT("Looked Left/Right! " + FString::SanitizeFloat(LookLrValue)));

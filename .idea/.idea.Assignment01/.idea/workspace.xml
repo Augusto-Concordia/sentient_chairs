@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="chore(mfc): removed whitespace and renamed parameters">
+    <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="chore(mfc): improved file structure">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Normal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Normal.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FirstPerson/Maps/FirstPersonMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPerson/Maps/FirstPersonMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706227745690</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chore(mfc): improved file structure">
+      <option name="closed" value="true" />
+      <created>1706228733087</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706228733087</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +191,7 @@
     <MESSAGE value="progress: competed hook-up with input system&#10;&#10;however, only mouse input works: keyboard is unresponsive for some reason" />
     <MESSAGE value="feat: successfully captured input!" />
     <MESSAGE value="chore(mfc): removed whitespace and renamed parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(mfc): removed whitespace and renamed parameters" />
+    <MESSAGE value="chore(mfc): improved file structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(mfc): improved file structure" />
   </component>
 </project>
