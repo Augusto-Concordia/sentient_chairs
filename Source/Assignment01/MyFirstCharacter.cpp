@@ -74,7 +74,7 @@ void AMyFirstCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 void AMyFirstCharacter::MoveJump(const FInputActionValue& Instance)
 {
-	//TODO: implement jumping (proper? idk)
+	Jump();
 
 	static constexpr uint64 JumpLogKey = 1;
 	GEngine->AddOnScreenDebugMessage(JumpLogKey, 2.5f, FColor::Green, TEXT("Jumped!"));
