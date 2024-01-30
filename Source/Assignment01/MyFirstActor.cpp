@@ -23,12 +23,16 @@ AMyFirstActor::AMyFirstActor()
 
 	if (!MeshAsset.Succeeded())
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed to load mesh asset!"));
+		if (GEngine != nullptr)
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed to load mesh asset!"));
+
 		return;
 	}
 
 	static_mesh->SetStaticMesh(MeshAsset.Object);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Loaded mesh asset!"));
+
+	if (GEngine != nullptr)
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Loaded mesh asset!"));
 }
 
 // Called when the game starts or when spawned

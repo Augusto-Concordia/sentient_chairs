@@ -10,9 +10,9 @@ class ASSIGNMENT01_API AMyFirstActor : public AActor
 {
 	GENERATED_BODY()
 
-private:
+public:
 	//Static Mesh
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere)
 	UStaticMeshComponent* static_mesh;
 	
 public:	
