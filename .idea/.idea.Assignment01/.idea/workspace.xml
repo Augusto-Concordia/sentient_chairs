@@ -7,12 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/Assignment01/README.md" afterDir="false" />
+    <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="feat: added README">
+      <change afterPath="$PROJECT_DIR$/Assignment01.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment01/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MyFirstActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MyFirstActor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Normal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Normal.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/HQ/E0QZE2FUHN1X7P6THUSTBN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/HQ/E0QZE2FUHN1X7P6THUSTBN.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +152,7 @@
       <workItem from="1706210217703" duration="1039000" />
       <workItem from="1706646905788" duration="566000" />
       <workItem from="1706754404122" duration="1482000" />
+      <workItem from="1707502240143" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!&#10;&#10;Completed undergraduate part of Assignment #1">
       <option name="closed" value="true" />
@@ -228,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706240739779</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: added README">
+      <option name="closed" value="true" />
+      <created>1707502355592</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707502355592</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,25 +253,16 @@
     <MESSAGE value="feat(mfc): added jump!" />
     <MESSAGE value="feat(mfc): added sensitivity controls to editor" />
     <MESSAGE value="feat: added teleporting keybinds&#10;&#10;fully completed assignment" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added teleporting keybinds&#10;&#10;fully completed assignment" />
+    <MESSAGE value="feat: added README" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp</url>
-          <line>33</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/Assignment01/MyFirstActor.cpp</url>
           <line>33</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp</url>
