@@ -8,10 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca1bfb5e-f9d6-4c8d-bbb7-4627e847343f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/Assignment01/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_MyFirstActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_MyFirstActor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Normal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Normal.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/HQ/E0QZE2FUHN1X7P6THUSTBN.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/HQ/E0QZE2FUHN1X7P6THUSTBN.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Assignment01/MyFirstActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Assignment01/MyFirstActor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Assignment01/MyFirstActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Assignment01/MyFirstActor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +23,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstActor.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Concordia/comp_474/Assignment01/Source/Assignment01/MyFirstCharacter.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -68,6 +76,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CidrLocalAttachDebugger.recentlyUsed">
+      <recent name="com.jetbrains.rider.cpp.debugger.RiderCppLLDBDriverConfiguration" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Assignment01" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -141,6 +154,7 @@
       <updated>1706210214711</updated>
       <workItem from="1706210217703" duration="1039000" />
       <workItem from="1706646905788" duration="566000" />
+      <workItem from="1706754404122" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!&#10;&#10;Completed undergraduate part of Assignment #1">
       <option name="closed" value="true" />
@@ -234,5 +248,35 @@
     <MESSAGE value="feat(mfc): added sensitivity controls to editor" />
     <MESSAGE value="feat: added teleporting keybinds&#10;&#10;fully completed assignment" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: added teleporting keybinds&#10;&#10;fully completed assignment" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/Assignment01/MyFirstActor.cpp</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/Assignment01/MyFirstCharacter.cpp</url>
+          <line>61</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
